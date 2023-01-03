@@ -3,6 +3,7 @@
   border-top: 15px solid rgb(148, 255, 123);
   padding: 5px;
   text-align: left;
+  background-color: aliceblue;
 }
 #formu li {
     list-style:none; 

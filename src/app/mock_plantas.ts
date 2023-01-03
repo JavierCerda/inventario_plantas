@@ -1,14 +1,11 @@
 import { Planta } from './plan';
 
 export const Plantas: Planta[] = [
-  { nombre: 'pep', tipo: 'Dr Nice' },
-  { nombre: 'pep', tipo: 'Narco' },
-  { nombre: 'pep', tipo: 'Bombasto' },
-  { nombre: 'pep', tipo: 'Celeritas' },
-  { nombre: 'pep', tipo: 'Magneta' },
-  { nombre: 'pep', tipo: 'RubberMan' },
-  { nombre: 'pep', tipo: 'Dynama' },
-  { nombre: 'pep', tipo: 'Dr IQ' },
-  { nombre: 'pep', tipo: 'Magma' },
-  { nombre: 'pep', tipo: 'Tornado' }
+  { nombre: 'aaa', tipo: 'Dr Nice' },
+  { nombre: 'bbb', tipo: 'Narco' },
+  { nombre: 'ccc', tipo: 'Bombasto' },
+  { nombre: 'romero', tipo: 'Celeritas' },
+  { nombre: 'cilantro', tipo: 'Magneta' },
+  { nombre: 'seta', tipo: 'RubberMan' },
+  { nombre: 'arbol', tipo: 'Dynama' },
 ];

@@ -4,10 +4,23 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 0;
 }
 #padre{
     display: flex;
     flex-direction: row;
     gap: 20px;
     margin-top: 20px;
+}
+html{
+    height:750px;
+    padding: 0;
+margin:0;
+display: flex;
+flex-direction: column;
+    background-image: url("https://img.freepik.com/vector-premium/fondo-selva-plana_52683-61771.jpg?w=2000");
+    background-size:contain;
+}
+*{
+    padding: 0;
 }

@@ -9,10 +9,11 @@ import { Plantas } from './../../mock_plantas';
 })
 export class MostrarPlantasComponent {
   
-  plan=Plantas;
+  plan=Plantas.sort((a,b) => a.nombre.localeCompare(b.nombre));
+  
 
 eliminar(posicion:number){
- // delete(this.plan[posicion]);
+  // delete(this.plan[posicion]);
   let idstr = posicion.toString()
   let id_lin = document.getElementById(idstr);
   id_lin?.remove();
