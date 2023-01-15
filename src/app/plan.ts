@@ -1,4 +1,5 @@
 export interface Planta {
-    nombre: string;
-    tipo: string;
-  }
+  nombre: string;
+  tipo: string;
+  fav: string;
+}
