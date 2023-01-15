@@ -1,30 +1,13 @@
 <div id="formu">
     <form (ngSubmit)="submit()" #forma="ngForm">
-        <input
-        type="text"
-        #nombre="ngModel"
-        [(ngModel)]="crear.nombre"
-        placeholder="Introduzca el nombre de la planta"
-        name="nombre"
-        minlength="3"
-        required
-        />
+        <input type="text" #nombre="ngModel" [(ngModel)]="crear.nombre" placeholder="Introduzca el nombre de la planta"
+            name="nombre" minlength="3" required />
         <p>Árbol:</p>
-        <input
-        type="radio"
-        name="tipo"
-        value="arbol"
-        (click)="crear.tipo='arbol'"
-        />
+        <input type="radio" name="tipo" value="arbol" #tipo="ngModel" [(ngModel)]="crear.tipo" />
         <p>Arbusto:</p>
-        <input
-        type="radio"
-        name="tipo"
-        value="arbusto"
-        (click)="crear.tipo='arbusto'"
-        />
+        <input type="radio" name="tipo" value="arbusto" #tipo="ngModel" [(ngModel)]="crear.tipo" />
         <br>
-        <button type="submit" [disabled]="!forma.valid" >Crear</button>
+        <button type="submit" [disabled]="!forma.valid">Crear</button>
         <button type="reset">Borrar</button>
     </form>
 </div>

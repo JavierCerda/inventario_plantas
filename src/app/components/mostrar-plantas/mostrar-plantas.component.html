@@ -1,11 +1,13 @@
 <div id="formu">
   <ul>
     <li *ngFor="let plan of plan.sort() ;let indice=index" id="{{indice}}">
-    <span class="badge">
-      {{indice}} 
-      {{plan.nombre}} | {{plan.tipo}} | <button (click)="eliminar(indice)" >Eliminar</button> <button id="{{indice+'bu'}}" (click)="resaltar(indice,indice+'bu')" >Añadir a favoritos</button>
-
-    </span>
-  </li>
-</ul>
+      <span class="badge">
+        {{indice}}
+        {{plan.nombre}} |
+        {{plan.tipo}} |
+        <button (click)="eliminar(indice)">Eliminar</button>
+        <button id="{{indice+'bu'}}" (click)="resaltar(indice,indice+'bu')">{{plan.fav}}</button>
+      </span>
+    </li>
+  </ul>
 </div>

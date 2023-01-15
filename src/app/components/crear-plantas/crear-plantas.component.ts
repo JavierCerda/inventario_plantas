@@ -8,20 +8,18 @@ import { Plantas } from './../../mock_plantas';
   styleUrls: ['./crear-plantas.component.css']
 })
 export class CrearPlantasComponent {
-  crear:Planta={nombre: "", tipo: ""};
-  constructor( ){ };
-  submit(){
-    if(this.crear.nombre.length != 0 || this.crear.nombre.length != null){
-      if(document.querySelector('input[name="tipo"]:checked')){
-      
-      
+  crear: Planta = { nombre: "", tipo: "", fav: "" };
+  constructor() { };
+  submit() {
+    if (this.crear.nombre.length != 0 || this.crear.nombre.length != null) {
+      if (document.querySelector('input[name="tipo"]:checked')) {
         console.log("creado");
-        Plantas.push({nombre: this.crear.nombre,tipo: this.crear.tipo})
-      }else{
-      console.log("tienes que escoger un tipo de planta")
+        Plantas.push({ nombre: this.crear.nombre, tipo: this.crear.tipo, fav: "Añadir a favoritos" })
+      } else {
+        console.log("tienes que escoger un tipo de planta")
       }
-    }else{
-    console.log("El nombre es un campo obligatorio")
-    }  
+    } else {
+      console.log("El nombre es un campo obligatorio")
+    }
   }
 }
